@@ -232,7 +232,7 @@ names:
   230: pa18
   231: pw4
 nc: 232
-path: /home/yecm/yecanming/repo/detection_project/yolov5/datasets/tt100k_2021
+path: ../../yolov5/datasets/tt100k_2021
 test: test_2023-01-05-20.txt
 train: train_2023-01-05-20.txt
 val: val_2023-01-05-20.txt
