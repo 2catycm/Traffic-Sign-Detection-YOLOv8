@@ -9,7 +9,7 @@ model: yolov8m.pt # i.e. yolov8n.pt, yolov8n.yaml. Path to model file
 data: ./tt100k_2021_2023-01-05-20-yolo8.yaml # i.e. coco128.yaml. Path to data file
 epochs: 250 # number of epochs to train for
 patience: 50  # TODO: epochs to wait for no observable improvement for early stopping of training
-batch: -1 # number of images per batch
+batch: 4 # number of images per batch
 imgsz: 1024 # size of input images
 save: True # save checkpoints
 cache: True # True/ram, disk or False. Use cache for data loading
@@ -76,7 +76,7 @@ nms: False  # CoreML: add NMS
 
 # Hyperparameters ------------------------------------------------------------------------------------------------------
 lr0: 0.001  # initial learning rate (SGD=1E-2, Adam=1E-3)
-lrf: 0.01  # final OneCycleLR learning rate (lr0 * lrf)
+lrf: 0.1  # final OneCycleLR learning rate (lr0 * lrf)
 momentum: 0.937  # SGD momentum/Adam beta1
 weight_decay: 0.0005  # optimizer weight decay 5e-4
 warmup_epochs: 3.0  # warmup epochs (fractions ok)
