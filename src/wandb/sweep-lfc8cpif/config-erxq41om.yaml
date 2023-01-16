@@ -1,0 +1,183 @@
+wandb_version: 1
+
+agnostic_nms:
+  value: false
+augment:
+  value: false
+batch:
+  value: -1
+box:
+  value: 1.8715848628349885
+cache:
+  value: true
+cfg:
+  value: null
+close_mosaic:
+  value: 10
+cls:
+  value: 5.549495404273459
+conf:
+  value: null
+copy_paste:
+  value: 0
+cos_lr:
+  value: false
+data:
+  value: yolov8/tt100k_2021_2023-01-05-20-yolo8.yaml
+degrees:
+  value: 0.01008999258233252
+deterministic:
+  value: true
+device:
+  value: auto
+dfl:
+  value: 3.2681958007671943
+dnn:
+  value: false
+dropout:
+  value: 0
+dynamic:
+  value: false
+epochs:
+  value: 300
+exist_ok:
+  value: false
+fl_gamma:
+  value: 0
+fliplr:
+  value: 0
+flipud:
+  value: 0
+format:
+  value: torchscript
+half:
+  value: false
+hide_conf:
+  value: false
+hide_labels:
+  value: false
+hsv_h:
+  value: 0.006444011467052564
+hsv_s:
+  value: 0.4447542833261351
+hsv_v:
+  value: 0.619475009358264
+hydra:
+  value:
+    output_subdir: null
+    run:
+      dir: .
+image_weights:
+  value: false
+imgsz:
+  value: 1024
+int8:
+  value: false
+iou:
+  value: 0.7
+keras:
+  value: false
+label_smoothing:
+  value: 0
+line_thickness:
+  value: 3
+lr0:
+  value: 0.0004803100703335097
+lrf:
+  value: 0.5518960029074534
+mask_ratio:
+  value: 4
+max_det:
+  value: 300
+mixup:
+  value: 0.17504969785936064
+mode:
+  value: train
+model:
+  value: yolov8m.pt
+momentum:
+  value: 0.642895048925998
+mosaic:
+  value: 0.7011599209065233
+name:
+  value: 扫清六合，席卷八方
+nbs:
+  value: 64
+nms:
+  value: false
+opset:
+  value: 17
+optimize:
+  value: false
+optimizer:
+  value: AdamW
+overlap_mask:
+  value: true
+patience:
+  value: 50
+perspective:
+  value: 9.43603642022539e-06
+plots:
+  value: true
+pretrained:
+  value: false
+project:
+  value: yolo8_traffic_sign
+rect:
+  value: false
+resume:
+  value: false
+retina_masks:
+  value: false
+save:
+  value: true
+save_conf:
+  value: false
+save_crop:
+  value: false
+save_hybrid:
+  value: false
+save_json:
+  value: false
+save_txt:
+  value: false
+scale:
+  value: 0.5538341610113793
+seed:
+  value: 0
+shear:
+  value: 0.519877366766151
+show:
+  value: false
+simplify:
+  value: false
+single_cls:
+  value: false
+source:
+  value: null
+task:
+  value: detect
+translate:
+  value: 0.474629621141372
+v5loader:
+  value: false
+val:
+  value: true
+verbose:
+  value: false
+vid_stride:
+  value: 1
+visualize:
+  value: true
+warmup_bias_lr:
+  value: 0.1709703043830734
+warmup_epochs:
+  value: 0.8897835457733871
+warmup_momentum:
+  value: 0.2817702401420703
+weight_decay:
+  value: 0.0008946413044654231
+workers:
+  value: 32
+workspace:
+  value: 4

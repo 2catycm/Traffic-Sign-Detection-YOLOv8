@@ -1,0 +1,284 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.5
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.9.13
+    start_time: 1673886603.817206
+    t:
+      1:
+      - 1
+      - 41
+      - 50
+      - 55
+      2:
+      - 1
+      - 41
+      - 50
+      - 55
+      3:
+      - 23
+      - 37
+      4: 3.9.13
+      5: 0.13.5
+      8:
+      - 5
+agnostic_nms:
+  desc: null
+  value: false
+augment:
+  desc: null
+  value: false
+batch:
+  desc: null
+  value: -1
+box:
+  desc: null
+  value: 1.5183486924997436
+cache:
+  desc: null
+  value: true
+close_mosaic:
+  desc: null
+  value: 10
+cls:
+  desc: null
+  value: 8.241002936656338
+copy_paste:
+  desc: null
+  value: 0
+cos_lr:
+  desc: null
+  value: false
+data:
+  desc: null
+  value: yolov8/tt100k_2021_2023-01-05-20-yolo8.yaml
+degrees:
+  desc: null
+  value: 0.1356150218622751
+deterministic:
+  desc: null
+  value: true
+device:
+  desc: null
+  value: auto
+dfl:
+  desc: null
+  value: 1.7802994883656575
+dnn:
+  desc: null
+  value: false
+dropout:
+  desc: null
+  value: 0
+dynamic:
+  desc: null
+  value: false
+epochs:
+  desc: null
+  value: 300
+exist_ok:
+  desc: null
+  value: false
+fl_gamma:
+  desc: null
+  value: 0
+fliplr:
+  desc: null
+  value: 0
+flipud:
+  desc: null
+  value: 0
+format:
+  desc: null
+  value: torchscript
+half:
+  desc: null
+  value: false
+hide_conf:
+  desc: null
+  value: false
+hide_labels:
+  desc: null
+  value: false
+hsv_h:
+  desc: null
+  value: 0.012071062076254968
+hsv_s:
+  desc: null
+  value: 0.05027087276660528
+hsv_v:
+  desc: null
+  value: 0.7918113216228171
+image_weights:
+  desc: null
+  value: false
+imgsz:
+  desc: null
+  value: 1024
+int8:
+  desc: null
+  value: false
+iou:
+  desc: null
+  value: 0.7
+keras:
+  desc: null
+  value: false
+label_smoothing:
+  desc: null
+  value: 0
+line_thickness:
+  desc: null
+  value: 3
+lr0:
+  desc: null
+  value: 1.662474586179117e-05
+lrf:
+  desc: null
+  value: 0.10608947584000898
+mask_ratio:
+  desc: null
+  value: 4
+max_det:
+  desc: null
+  value: 300
+mixup:
+  desc: null
+  value: 0.46598685532460365
+mode:
+  desc: null
+  value: train
+model:
+  desc: null
+  value: yolov8m.pt
+momentum:
+  desc: null
+  value: 0.8151248312040107
+mosaic:
+  desc: null
+  value: 0.9733040544851074
+name:
+  desc: null
+  value: 扫清六合，席卷八方
+nbs:
+  desc: null
+  value: 64
+nms:
+  desc: null
+  value: false
+opset:
+  desc: null
+  value: 17
+optimize:
+  desc: null
+  value: false
+optimizer:
+  desc: null
+  value: AdamW
+overlap_mask:
+  desc: null
+  value: true
+patience:
+  desc: null
+  value: 50
+perspective:
+  desc: null
+  value: 3.9030495796744e-05
+plots:
+  desc: null
+  value: true
+pretrained:
+  desc: null
+  value: false
+project:
+  desc: null
+  value: yolo8_traffic_sign
+rect:
+  desc: null
+  value: false
+resume:
+  desc: null
+  value: false
+retina_masks:
+  desc: null
+  value: false
+save:
+  desc: null
+  value: true
+save_conf:
+  desc: null
+  value: false
+save_crop:
+  desc: null
+  value: false
+save_hybrid:
+  desc: null
+  value: false
+save_json:
+  desc: null
+  value: false
+save_txt:
+  desc: null
+  value: false
+scale:
+  desc: null
+  value: 0.3743398788825365
+seed:
+  desc: null
+  value: 0
+shear:
+  desc: null
+  value: 0.141228764566214
+show:
+  desc: null
+  value: false
+simplify:
+  desc: null
+  value: false
+single_cls:
+  desc: null
+  value: false
+task:
+  desc: null
+  value: detect
+translate:
+  desc: null
+  value: 0.4704716607404596
+v5loader:
+  desc: null
+  value: false
+val:
+  desc: null
+  value: true
+verbose:
+  desc: null
+  value: false
+vid_stride:
+  desc: null
+  value: 1
+visualize:
+  desc: null
+  value: true
+warmup_bias_lr:
+  desc: null
+  value: 0.04231056231885055
+warmup_epochs:
+  desc: null
+  value: 4.239460063992151
+warmup_momentum:
+  desc: null
+  value: 0.6869994637739254
+weight_decay:
+  desc: null
+  value: 0.0008780892874944775
+workers:
+  desc: null
+  value: 32
+workspace:
+  desc: null
+  value: 4

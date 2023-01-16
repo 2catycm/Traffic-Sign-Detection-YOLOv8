@@ -1,0 +1,172 @@
+wandb_version: 1
+
+agnostic_nms:
+  value: false
+augment:
+  value: false
+batch:
+  value: -1
+box:
+  value: 8.094880467585293
+cache:
+  value: true
+close_mosaic:
+  value: 10
+cls:
+  value: 7.749158655725723
+copy_paste:
+  value: 0
+cos_lr:
+  value: false
+data:
+  value: yolov8/tt100k_2021_2023-01-05-20-yolo8.yaml
+degrees:
+  value: 0.15461782780831898
+deterministic:
+  value: true
+device:
+  value: auto
+dfl:
+  value: 2.177835042700779
+dnn:
+  value: false
+dropout:
+  value: 0
+dynamic:
+  value: false
+epochs:
+  value: 300
+exist_ok:
+  value: false
+fl_gamma:
+  value: 0
+fliplr:
+  value: 0
+flipud:
+  value: 0
+format:
+  value: torchscript
+half:
+  value: false
+hide_conf:
+  value: false
+hide_labels:
+  value: false
+hsv_h:
+  value: 0.009217778294626052
+hsv_s:
+  value: 0.012780285728753149
+hsv_v:
+  value: 0.8025202970591842
+image_weights:
+  value: false
+imgsz:
+  value: 1024
+int8:
+  value: false
+iou:
+  value: 0.7
+keras:
+  value: false
+label_smoothing:
+  value: 0
+line_thickness:
+  value: 3
+lr0:
+  value: 7.941234154032765e-05
+lrf:
+  value: 0.0319544862182105
+mask_ratio:
+  value: 4
+max_det:
+  value: 300
+mixup:
+  value: 0.1474436449644071
+mode:
+  value: train
+model:
+  value: yolov8m.pt
+momentum:
+  value: 0.9705938659901056
+mosaic:
+  value: 0.6459461351250844
+name:
+  value: 扫清六合，席卷八方
+nbs:
+  value: 64
+nms:
+  value: false
+opset:
+  value: 17
+optimize:
+  value: false
+optimizer:
+  value: AdamW
+overlap_mask:
+  value: true
+patience:
+  value: 50
+perspective:
+  value: 0.0004599543185424166
+plots:
+  value: true
+pretrained:
+  value: false
+project:
+  value: yolo8_traffic_sign
+rect:
+  value: false
+resume:
+  value: false
+retina_masks:
+  value: false
+save:
+  value: true
+save_conf:
+  value: false
+save_crop:
+  value: false
+save_hybrid:
+  value: false
+save_json:
+  value: false
+save_txt:
+  value: false
+scale:
+  value: 0.8920293027062005
+seed:
+  value: 0
+shear:
+  value: 0.5187002527358836
+show:
+  value: false
+simplify:
+  value: false
+single_cls:
+  value: false
+task:
+  value: detect
+translate:
+  value: 0.51360941759921
+v5loader:
+  value: false
+val:
+  value: true
+verbose:
+  value: false
+vid_stride:
+  value: 1
+visualize:
+  value: true
+warmup_bias_lr:
+  value: 0.13697131111107885
+warmup_epochs:
+  value: 1.1764660389964177
+warmup_momentum:
+  value: 0.0828550591997228
+weight_decay:
+  value: 0.0001907981559170201
+workers:
+  value: 32
+workspace:
+  value: 4

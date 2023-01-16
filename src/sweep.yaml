@@ -1,0 +1,277 @@
+program: /home/yecm/yecanming/repo/detection_project/yolov8/src/sweep.py
+method: bayes
+metric: 
+  name: metrics/mAP50(B)
+  goal: maximize
+
+
+# --- # Hyperparameters ------------------------------------------------------------------------------------------------------
+# Ultralytics YOLO 🚀, GPL-3.0 license
+# Default training settings and hyperparameters for medium-augmentation COCO training
+parameters: 
+  lr0:
+    # value: 0.01 # initial learning rate (SGD=1E-2, Adam=1E-3)
+    distribution: log_uniform_values
+    max: 3.0e-3
+    min: 7.0e-7
+  lrf:
+    # value: 0.1 # final OneCycleLR learning rate (lr0 * lrf)
+    distribution: log_uniform_values
+    min: 0.001
+    max: 1.0
+  momentum:
+    # value: 0.937 # SGD momentum/Adam beta1
+    distribution: uniform
+    min: 0.6
+    max: 0.98
+  weight_decay:
+    # value: 0.0005 # optimizer weight decay 5e-4
+    distribution: uniform
+    min: 0.0
+    max: 0.001
+  warmup_epochs:
+    # value: 3.0 # warmup epochs (fractions ok)
+    distribution: uniform
+    min: 0.0
+    max: 5.0
+  warmup_momentum:
+    # value: 0.8 # warmup initial momentum
+    distribution: uniform
+    min: 0.0
+    max: 0.95
+  warmup_bias_lr:
+    # value: 0.1 # warmup initial bias lr
+    distribution: uniform
+    min: 0.0
+    max: 0.2
+
+  box:
+    # value: 0.05 # box loss gain
+    distribution: uniform
+    min: 0.0
+    max: 10
+  cls:
+    # value: 0.3 # cls loss gain (scale with pixels)
+    distribution: uniform
+    min: 0.0
+    max: 10
+  dfl:
+    # value: 0.7 # dfl loss gain
+    distribution: uniform
+    min: 0.0
+    max: 10
+  fl_gamma:
+    value: 0.0 # focal loss gamma (efficientDet default gamma=1.5)
+  label_smoothing:
+    value: 0.0
+  nbs:
+    value: 64 # nominal batch size
+
+
+  hsv_h:
+    # value: 0.015 # image HSV-Hue augmentation (fraction)
+    distribution: uniform
+    min: 0.0
+    max: 0.02
+  hsv_s:
+    # value: 0.6 # image HSV-Saturation augmentation (fraction)
+    distribution: uniform
+    min: 0.0
+    max: 0.9
+  hsv_v:
+    # value: 0.4 # image HSV-Value augmentation (fraction)
+    distribution: uniform
+    min: 0.0
+    max: 0.9
+
+  degrees:
+    # value: 0.2 # image rotation (+/- deg)
+    distribution: uniform
+    min: 0.0
+    max: 0.2
+  translate:
+    # value: 0.2 # image translation (+/- fraction)
+    distribution: uniform
+    min: 0.0
+    max: 0.9
+  scale:
+    # value: 0.7 # image scale (+/- gain)
+    distribution: uniform
+    min: 0.0
+    max: 0.9
+  shear:
+    distribution: uniform
+    min: 0.0
+    max: 0.602
+  perspective:
+    # value: 0.0 # image perspective (+/- fraction), range 0-0.001
+    distribution: uniform
+    min: 0.0
+    max: 0.001
+
+  flipud:
+    value: 0 # image flip up-down (probability)
+  fliplr:
+    value: 0 # image flip left-right (probability)
+  mosaic:
+    # value: 0.9 # image mosaic (probability)
+    distribution: uniform
+    min: 0.5
+    max: 1.0
+  mixup:
+    # value: 0.2 # image mixup (probability)
+    distribution: uniform
+    min: 0.0
+    max: 0.5
+  copy_paste:
+    value: 0.0 # segment copy-paste (probability)
+
+  task:
+    value: "detect" # choices=['detect', 'segment', 'classify', 'init'] # init is a special case. Specify task to run.
+  mode:
+    value: "train" # choices=['train', 'val', 'predict'] # mode to run task in.
+
+
+
+  # Train settings -------------------------------------------------------------------------------------------------------
+  model:
+    value: yolov8m.pt # i.e. yolov8n.pt, yolov8n.yaml. Path to model file
+  data:
+    value: yolov8/tt100k_2021_2023-01-05-20-yolo8.yaml # i.e. coco128.yaml. Path to data file
+  epochs:
+    value: 300 # number of epochs to train for
+  patience:
+    value: 50 # TODO:  value: epochs to wait for no observable improvement for early stopping of training
+  batch:
+    value: -1 # number of images per batch
+  imgsz:
+    value: 1024 # size of input images
+
+  save:
+    value: True # save checkpoints
+  cache:
+    value: True # True/ram, disk or False. Use cache for data loading
+  # cache:  value: True # True/ram, disk or False. Use cache for data loading
+  device:
+    # value: 0,1,2,3 # cuda device, i.e. 0 or 0,1,2,3 or cpu. Device to run on
+    # value: 3 # cuda device, i.e. 0 or 0,1,2,3 or cpu. Device to run on
+    value: auto # 自动选择空闲
+  workers:
+    value: 32 # number of worker threads for data loading
+  project:
+    value: yolo8_traffic_sign # project name
+  name:
+    value: "扫清六合，席卷八方" # experiment name
+  exist_ok:
+    value: False # whether to overwrite existing experiment
+  pretrained:
+    value: False # whether to use a pretrained model
+  optimizer:
+    value: "AdamW" # optimizer to use, choices=['SGD', 'Adam', 'AdamW', 'RMSProp']
+  verbose:
+    value: False # whether to print verbose output
+  seed:
+    value: 0 # random seed for reproducibility
+  deterministic:
+    value: True # whether to enable deterministic mode
+  single_cls:
+    value: False # train multi-class data as single-class
+  image_weights:
+    value: False # use weighted image selection for training
+  rect:
+    value: False # support rectangular training
+  cos_lr:
+    value: False # use cosine learning rate scheduler
+  close_mosaic:
+    value: 10 # disable mosaic augmentation for final 10 epochs
+  resume:
+    value: False # resume training from last checkpoint
+  # Segmentation
+  overlap_mask:
+    value: True # masks should overlap during training
+  mask_ratio:
+    value: 4 # mask downsample ratio
+  # Classification
+  dropout:
+    value: 0.0 # use dropout regularization
+
+  # Hydra configs --------------------------------------------------------------------------------------------------------
+  # cfg:
+  #   value: null # for overriding defaults.yaml
+  # hydra:
+  #   value:
+  #     output_subdir: null # disable hydra directory creation
+  #     run:
+  #       dir: .
+
+  # Debug, do not modify -------------------------------------------------------------------------------------------------
+  v5loader:
+    value: False # use legacy YOLOv5 dataloader
+
+  # Val/Test settings ----------------------------------------------------------------------------------------------------
+  val:
+    value: True # validate/test during training
+  save_json:
+    value: False # save results to JSON file
+  save_hybrid:
+    value: False # save hybrid version of labels (labels + additional predictions)
+  # conf:
+  #   value: null # object confidence threshold for detection (default 0.25 predict, 0.001 val)
+  iou:
+    value: 0.7 # intersection over union (IoU) threshold for NMS
+  max_det:
+    value: 300 # maximum number of detections per image
+  half:
+    value: False # use half precision (FP16)
+  dnn:
+    value: False # use OpenCV DNN for ONNX inference
+  plots:
+    value: True # show plots during training
+
+  # Prediction settings --------------------------------------------------------------------------------------------------
+  # source:
+  #   value: null # source directory for images or videos
+  show:
+    value: False # show results if possible
+  save_txt:
+    value: False # save results as .txt file
+  save_conf:
+    value: False # save results with confidence scores
+  save_crop:
+    value: False # save cropped images with results
+  hide_labels:
+    value: False # hide labels
+  hide_conf:
+    value: False # hide confidence scores
+  vid_stride:
+    value: 1 # video frame-rate stride
+  line_thickness:
+    value: 3 # bounding box thickness (pixels)
+  visualize:
+    value: True # visualize results
+  augment:
+    value: False # apply data augmentation to images
+  agnostic_nms:
+    value: False # class-agnostic NMS
+  retina_masks:
+    value: False # use retina masks for object detection
+
+  # Export settings ------------------------------------------------------------------------------------------------------
+  format:
+    value: torchscript # format to export to
+  keras:
+    value: False # use Keras
+  optimize:
+    value: False # TorchScript:  value: optimize for mobile
+  int8:
+    value: False # CoreML/TF INT8 quantization
+  dynamic:
+    value: False # ONNX/TF/TensorRT:  value: dynamic axes
+  simplify:
+    value: False # ONNX:  value: simplify model
+  opset:
+    value: 17 # ONNX:  value: opset version
+  workspace:
+    value: 4 # TensorRT:  value: workspace size (GB)
+  nms:
+    value: False # CoreML:  value: add NMS

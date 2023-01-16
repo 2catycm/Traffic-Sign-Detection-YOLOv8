@@ -1,0 +1,287 @@
+wandb: Starting wandb agent 🕵️
+2023-01-17 00:29:59,405 - wandb.wandb_agent - INFO - Running runs: []
+2023-01-17 00:29:59,793 - wandb.wandb_agent - INFO - Agent received command: run
+2023-01-17 00:29:59,793 - wandb.wandb_agent - INFO - Agent starting run with config:
+	agnostic_nms: False
+	augment: False
+	batch: -1
+	box: 1.5183486924997436
+	cache: True
+	close_mosaic: 10
+	cls: 8.241002936656338
+	copy_paste: 0
+	cos_lr: False
+	data: yolov8/tt100k_2021_2023-01-05-20-yolo8.yaml
+	degrees: 0.1356150218622751
+	deterministic: True
+	device: auto
+	dfl: 1.7802994883656575
+	dnn: False
+	dropout: 0
+	dynamic: False
+	epochs: 300
+	exist_ok: False
+	fl_gamma: 0
+	fliplr: 0
+	flipud: 0
+	format: torchscript
+	half: False
+	hide_conf: False
+	hide_labels: False
+	hsv_h: 0.012071062076254968
+	hsv_s: 0.05027087276660528
+	hsv_v: 0.7918113216228171
+	image_weights: False
+	imgsz: 1024
+	int8: False
+	iou: 0.7
+	keras: False
+	label_smoothing: 0
+	line_thickness: 3
+	lr0: 1.662474586179117e-05
+	lrf: 0.10608947584000898
+	mask_ratio: 4
+	max_det: 300
+	mixup: 0.46598685532460365
+	mode: train
+	model: yolov8m.pt
+	momentum: 0.8151248312040107
+	mosaic: 0.9733040544851074
+	name: 扫清六合，席卷八方
+	nbs: 64
+	nms: False
+	opset: 17
+	optimize: False
+	optimizer: AdamW
+	overlap_mask: True
+	patience: 50
+	perspective: 3.9030495796744e-05
+	plots: True
+	pretrained: False
+	project: yolo8_traffic_sign
+	rect: False
+	resume: False
+	retina_masks: False
+	save: True
+	save_conf: False
+	save_crop: False
+	save_hybrid: False
+	save_json: False
+	save_txt: False
+	scale: 0.3743398788825365
+	seed: 0
+	shear: 0.141228764566214
+	show: False
+	simplify: False
+	single_cls: False
+	task: detect
+	translate: 0.4704716607404596
+	v5loader: False
+	val: True
+	verbose: False
+	vid_stride: 1
+	visualize: True
+	warmup_bias_lr: 0.04231056231885055
+	warmup_epochs: 4.239460063992151
+	warmup_momentum: 0.6869994637739254
+	weight_decay: 0.0008780892874944775
+	workers: 32
+	workspace: 4
+2023-01-17 00:29:59,811 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python /home/yecm/yecanming/repo/detection_project/yolov8/src/sweep.py --agnostic_nms=False --augment=False --batch=-1 --box=1.5183486924997436 --cache=True --close_mosaic=10 --cls=8.241002936656338 --copy_paste=0 --cos_lr=False --data=yolov8/tt100k_2021_2023-01-05-20-yolo8.yaml --degrees=0.1356150218622751 --deterministic=True --device=auto --dfl=1.7802994883656575 --dnn=False --dropout=0 --dynamic=False --epochs=300 --exist_ok=False --fl_gamma=0 --fliplr=0 --flipud=0 --format=torchscript --half=False --hide_conf=False --hide_labels=False --hsv_h=0.012071062076254968 --hsv_s=0.05027087276660528 --hsv_v=0.7918113216228171 --image_weights=False --imgsz=1024 --int8=False --iou=0.7 --keras=False --label_smoothing=0 --line_thickness=3 --lr0=1.662474586179117e-05 --lrf=0.10608947584000898 --mask_ratio=4 --max_det=300 --mixup=0.46598685532460365 --mode=train --model=yolov8m.pt --momentum=0.8151248312040107 --mosaic=0.9733040544851074 --name=扫清六合，席卷八方 --nbs=64 --nms=False --opset=17 --optimize=False --optimizer=AdamW --overlap_mask=True --patience=50 --perspective=3.9030495796744e-05 --plots=True --pretrained=False --project=yolo8_traffic_sign --rect=False --resume=False --retina_masks=False --save=True --save_conf=False --save_crop=False --save_hybrid=False --save_json=False --save_txt=False --scale=0.3743398788825365 --seed=0 --shear=0.141228764566214 --show=False --simplify=False --single_cls=False --task=detect --translate=0.4704716607404596 --v5loader=False --val=True --verbose=False --vid_stride=1 --visualize=True --warmup_bias_lr=0.04231056231885055 --warmup_epochs=4.239460063992151 --warmup_momentum=0.6869994637739254 --weight_decay=0.0008780892874944775 --workers=32 --workspace=4
+wandb: Currently logged in as: 2603119857 (open-book). Use `wandb login --relogin` to force relogin
+2023-01-17 00:30:04,827 - wandb.wandb_agent - INFO - Running runs: ['wkltdhso']
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: Network error (ReadTimeout), entering retry loop.
+wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: wandb version 0.13.9 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.5
+wandb: Run data is saved locally in /home/yecm/yecanming/repo/detection_project/yolov8/src/wandb/run-20230117_003003-wkltdhso
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run vital-sweep-1
+wandb: ⭐️ View project at https://wandb.ai/open-book/YOLOv8-Traffic-Sign
+wandb: 🧹 View sweep at https://wandb.ai/open-book/YOLOv8-Traffic-Sign/sweeps/c8mvgi1i
+wandb: 🚀 View run at https://wandb.ai/open-book/YOLOv8-Traffic-Sign/runs/wkltdhso
+Overriding default config with /home/yecm/yecanming/repo/detection_project/yolov8/tmp_yaml/train_2023-01-17-00-30-47-957413_6506.yaml
+wandb: Network error resolved after 0:00:38.285294, resuming normal operation.
+Ultralytics YOLOv8.0.6 🚀 Python-3.9.13 torch-2.0.0.dev20230109+cu116 CUDA:0 (NVIDIA GeForce RTX 2080, 7982MiB)
+[34m[1myolo/engine/trainer: [0mtask=detect, mode=train, model=yolov8m.pt, data=yolov8/tt100k_2021_2023-01-05-20-yolo8.yaml, epochs=300, patience=50, batch=-1, imgsz=1024, save=True, cache=True, device=0, workers=32, project=yolo8_traffic_sign, name=扫清六合，席卷八方, exist_ok=False, pretrained=False, optimizer=AdamW, verbose=False, seed=0, deterministic=True, single_cls=False, image_weights=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, overlap_mask=True, mask_ratio=4, dropout=0, val=True, save_json=False, save_hybrid=False, conf=0.001, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=ultralytics/assets/, show=False, save_txt=False, save_conf=False, save_crop=False, hide_labels=False, hide_conf=False, vid_stride=1, line_thickness=3, visualize=True, augment=False, agnostic_nms=False, retina_masks=False, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=17, workspace=4, nms=False, lr0=1.662474586179117e-05, lrf=0.10608947584000898, momentum=0.8151248312040107, weight_decay=0.0008780892874944775, warmup_epochs=4.239460063992151, warmup_momentum=0.6869994637739254, warmup_bias_lr=0.04231056231885055, box=1.5183486924997436, cls=8.241002936656338, dfl=1.7802994883656575, fl_gamma=0, label_smoothing=0, nbs=64, hsv_h=0.012071062076254968, hsv_s=0.05027087276660528, hsv_v=0.7918113216228171, degrees=0.1356150218622751, translate=0.4704716607404596, scale=0.3743398788825365, shear=0.141228764566214, perspective=3.9030495796744e-05, flipud=0, fliplr=0, mosaic=0.9733040544851074, mixup=0.46598685532460365, copy_paste=0, cfg=None, hydra={'output_subdir': None, 'run': {'dir': '.'}}, v5loader=False, save_dir=yolo8_traffic_sign/扫清六合，席卷八方2
+Error executing job with overrides: ['cfg=/home/yecm/yecanming/repo/detection_project/yolov8/tmp_yaml/train_2023-01-17-00-30-47-957413_6506.yaml']
+Traceback (most recent call last):
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/ultralytics/yolo/cli.py", line 56, in cli
+    func(cfg)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/hydra/main.py", line 79, in decorated_main
+    return task_function(cfg_passthrough)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/ultralytics/yolo/v8/detect/train.py", line 207, in train
+    model.train(**cfg)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/ultralytics/yolo/engine/model.py", line 189, in train
+    self.trainer = self.TrainerClass(overrides=overrides)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/ultralytics/yolo/engine/trainer.py", line 126, in __init__
+    self.data = check_dataset_yaml(self.data)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/ultralytics/yolo/data/utils.py", line 190, in check_dataset_yaml
+    data = check_file(data)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/ultralytics/yolo/utils/checks.py", line 222, in check_file
+    assert len(files), f'File not found: {file}'  # assert file was found
+AssertionError: File not found: yolov8/tt100k_2021_2023-01-05-20-yolo8.yaml
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Choosing the GPU device has largest free memory...
+Sorted by free memory size
+Using GPU 0:
+index:0
+gpu_name:NVIDIA GeForce RTX 2080
+memory.free:7979
+memory.total:8192
+power.draw:5
+power.limit:215
+specified:True
+警告，运行失败。临时配置文件为/home/yecm/yecanming/repo/detection_project/yolov8/tmp_yaml/train_2023-01-17-00-30-47-957413_6506.yaml
+2023-01-17 00:30:57,942 - wandb.wandb_agent - INFO - Cleaning up finished run: wkltdhso
+wandb: Waiting for W&B process to finish... (success).
+wandb: Network error (ReadTimeout), entering retry loop.
+wandb: Network error (TransientError), entering retry loop.
+wandb: Synced electric-sweep-1: https://wandb.ai/open-book/YOLOv8-Traffic-Sign/runs/psv7qgss
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230117_002336-psv7qgss/logs
+wandb: ERROR Error while calling W&B API: could not find agent m7p23g9l during agentHeartbeat (<Response [404]>)
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
+Traceback (most recent call last):
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 210, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 2048, in agent_heartbeat
+    response = self.gql(
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 129, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/util.py", line 996, in no_retry_auth
+    raise CommError("Permission denied, ask the project owner to grant you access")
+wandb.errors.CommError: Permission denied, ask the project owner to grant you access
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yecm/anaconda3/envs/torch2.0/bin/wandb", line 8, in <module>
+    sys.exit(cli())
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/click/core.py", line 1053, in main
+    rv = self.invoke(ctx)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/click/core.py", line 754, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/cli/cli.py", line 1311, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/wandb_agent.py", line 642, in agent
+    sweep_id,
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/wandb_agent.py", line 584, in run_agent
+    finally:
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/wandb_agent.py", line 275, in run
+    commands = self._api.agent_heartbeat(agent_id, {}, run_status)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/apis/internal.py", line 126, in agent_heartbeat
+    return self.api.agent_heartbeat(*args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 2059, in agent_heartbeat
+    message = ast.literal_eval(e.args[0])["message"]
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/ast.py", line 62, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    Permission denied, ask the project owner to grant you access
+               ^
+SyntaxError: invalid syntax
+wandb: Network error (TransientError), entering retry loop.
+wandb: Synced vital-sweep-1: https://wandb.ai/open-book/YOLOv8-Traffic-Sign/runs/wkltdhso
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230117_003003-wkltdhso/logs
+2023-01-17 00:43:46,734 - wandb.wandb_agent - INFO - Agent received command: exit
+2023-01-17 00:43:46,734 - wandb.wandb_agent - INFO - Received exit command. Killing runs and quitting.
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
+wandb: Synced denim-sweep-1: https://wandb.ai/open-book/YOLOv8-Traffic-Sign/runs/ru46x6h6
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230117_002752-ru46x6h6/logs
+wandb: ERROR Error while calling W&B API: could not find agent 4z2zggv8 during agentHeartbeat (<Response [404]>)
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
+Traceback (most recent call last):
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 210, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 2048, in agent_heartbeat
+    response = self.gql(
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 129, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/util.py", line 996, in no_retry_auth
+    raise CommError("Permission denied, ask the project owner to grant you access")
+wandb.errors.CommError: Permission denied, ask the project owner to grant you access
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yecm/anaconda3/envs/torch2.0/bin/wandb", line 8, in <module>
+    sys.exit(cli())
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/click/core.py", line 1053, in main
+    rv = self.invoke(ctx)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/click/core.py", line 754, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/cli/cli.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/cli/cli.py", line 1311, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/wandb_agent.py", line 641, in agent
+    return run_agent(
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/wandb_agent.py", line 583, in run_agent
+    agent.run()
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/wandb_agent.py", line 275, in run
+    commands = self._api.agent_heartbeat(agent_id, {}, run_status)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/apis/internal.py", line 126, in agent_heartbeat
+    return self.api.agent_heartbeat(*args, **kwargs)
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 2059, in agent_heartbeat
+    message = ast.literal_eval(e.args[0])["message"]
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/ast.py", line 62, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/home/yecm/anaconda3/envs/torch2.0/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    Permission denied, ask the project owner to grant you access
+               ^
+SyntaxError: invalid syntax
